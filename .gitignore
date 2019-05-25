@@ -1,0 +1,8 @@
+/.vs
+/debug
+/release
+/x64
+/.qmake.stash
+/*.user
+/*.filters
+/ui*
