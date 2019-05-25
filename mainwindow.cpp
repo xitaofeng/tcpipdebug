@@ -58,8 +58,8 @@ bool MainWindow::initilize(QString *msg)
 		return false;
 	}
 	*_cfg = json.toVariant().toMap();
-	_ui->ipAddrText->setText((*_cfg)["tcp"].toMap()["addr"].toString());
-	_ui->ipPortText->setText((*_cfg)["tcp"].toMap()["port"].toString());
+	_ui->ipAddrText->setText((*_cfg)["addr"].toString());
+	_ui->ipPortText->setText((*_cfg)["port"].toString());
 	_tcpGrp->addButton(_ui->tcpRadioBtn);
 	_tcpGrp->addButton(_ui->udpRadioBtn);
 	return true;
